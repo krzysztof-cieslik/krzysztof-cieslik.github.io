@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+
+* {
+    box-sizing: border-box
+}
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, serif;
+    color: #e7e7e7;
+    background-color: #1c1c1c
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    height: 2vw;
+    background-color: #373737
+}
+
+.menu .lewy-kontener {
+    height: 100%;
+    display: flex;
+    align-items: center
+}
+
+.menu .lewy-kontener .element-kontenera {
+    margin-left: 8%
+}
+
+.menu .lewy-kontener .nazwa-strony {
+    font-weight: 700
+}
+
+.menu .prawy-kontener {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    float: right
+}
+
+.menu .prawy-kontener .element-kontenera {
+    margin-right: 8%
+}
+
+.glowny-kontener {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2% 0
+}
+
+.glowny-kontener .logo {
+    height: 20vw;
+    background-color: #8b0000;
+    width: 60%
+}
+
+.glowny-kontener .grid-skrzynki {
+    margin-top: 2%;
+    height: 5vw;
+    width: 80%;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr)
+}
+
+.glowny-kontener .grid-skrzynki .element-grid-skrzynki {
+    margin: 10%;
+    height: 24vw;
+    background-color: #fff
+}
