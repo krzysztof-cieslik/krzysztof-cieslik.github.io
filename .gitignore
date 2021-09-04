@@ -6,3 +6,4 @@ package-lock.json
 *.log
 *.patch
 *.idea
+*.vs
