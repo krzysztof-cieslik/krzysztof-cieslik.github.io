@@ -1,7 +1,7 @@
 ﻿@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
 
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body, html {
@@ -10,7 +10,7 @@ body, html {
     margin: 0;
     font-family: Roboto, serif;
     color: #e7e7e7;
-    background: url('../assets/tlo przezroczyste.png') no-repeat #1a1a1a center;
+    background-color: #1a1a1a;
 }
 
 .menu {
@@ -19,59 +19,74 @@ body, html {
     position: sticky;
     top: 0;
     height: 2vw;
-    background-color: #373737
+    background-color: #373737;
 }
 
-.menu .lewy-kontener {
-    height: 100%;
-    display: flex;
-    align-items: center
-}
-
-.menu .lewy-kontener .element-kontenera {
-    margin-left: 8%
-}
-
-.menu .lewy-kontener .nazwa-strony {
-    font-weight: 700
-}
-
-.menu .prawy-kontener {
+.lewy-kontener {
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.menu .prawy-kontener .element-kontenera:not(:first-child) {
-    margin-left: 8%
+.lewy-kontener .element-kontenera {
+    margin-left: 8%;
+}
+
+.nazwa-strony {
+    font-weight: 700;
+}
+
+.prawy-kontener {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.prawy-kontener .element-kontenera:not(:first-child) {
+    margin-left: 8%;
 }
 
 .glowny-kontener {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2% 0
+    padding-bottom: 2%;
 }
 
-.glowny-kontener .logo {
-    height: 535px;
-    width:1920px;
-    background-image: url('../assets/baner - gotowe.png');
+.postac-lewo, .postac-prawo {
+    width: 15%;
+    background-color: #340596;
 }
 
-.glowny-kontener .grid-skrzynki {
-    margin-top: 2%;
-    height: 5vw;
+.postac-prawo {
+    order: 1;
+}
+
+.kontener-skrzynek {
+    width: 70%;
+}
+
+.logo{
+    width: 100%;
+}
+
+.grid-skrzynki {
+    margin: 2vw 2vw;
     display: grid;
-    grid-template-columns: repeat(4, auto)
+    grid-template-columns: repeat(4, auto);
+    gap: 2vw;
 }
 
-.glowny-kontener .grid-skrzynki .element-grid-skrzynki {
-    margin: 15px;
-    width: 20vw;
-    transition-duration: 1s;
+.element-grid-skrzynki {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgba(105, 105, 105, .1);
+    justify-self: center;
+    object-fit: contain;
+    width: 15vw;
+    height: 15vw;
+    transition-duration: .5s;
 }
 
-.glowny-kontener .grid-skrzynki .element-grid-skrzynki:hover {
-    transform: scale(1.1);
+.element-grid-skrzynki:hover {
+    transform: scale(1.05);
+    background-color: rgba(105, 105, 105, .5);
 }
