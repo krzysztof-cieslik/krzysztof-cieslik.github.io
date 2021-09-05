@@ -55,7 +55,7 @@ body, html {
 
 .glowny-kontener .logo {
     height: 20vw;
-    background-image: url('baner - gotowe.png');
+    background-image: url('../assets/baner - gotowe.png');
 }
 
 .glowny-kontener .grid-skrzynki {
