@@ -54,7 +54,8 @@ body, html {
 }
 
 .glowny-kontener .logo {
-    height: 20vw;
+    height: 600px;
+    width:1920px;
     background-image: url('../assets/baner - gotowe.png');
 }
 
