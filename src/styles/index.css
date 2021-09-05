@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+﻿@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
 
 * {
     box-sizing: border-box
@@ -10,7 +10,8 @@ body, html {
     margin: 0;
     font-family: Roboto, serif;
     color: #e7e7e7;
-    background-image: url("../tlo.jpg");
+    background-color: #1a1a1a;
+    background-image: url('tlo przezroczyste.png');
 }
 
 .menu {
@@ -22,30 +23,30 @@ body, html {
     background-color: #373737
 }
 
-.menu .lewy-kontener {
-    height: 100%;
-    display: flex;
-    align-items: center
-}
+    .menu .lewy-kontener {
+        height: 100%;
+        display: flex;
+        align-items: center
+    }
 
-.menu .lewy-kontener .element-kontenera {
-    margin-left: 8%
-}
+        .menu .lewy-kontener .element-kontenera {
+            margin-left: 8%
+        }
 
-.menu .lewy-kontener .nazwa-strony {
-    font-weight: 700
-}
+        .menu .lewy-kontener .nazwa-strony {
+            font-weight: 700
+        }
 
-.menu .prawy-kontener {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    float: right
-}
+    .menu .prawy-kontener {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        float: right
+    }
 
-.menu .prawy-kontener .element-kontenera {
-    margin-right: 8%
-}
+        .menu .prawy-kontener .element-kontenera {
+            margin-right: 8%
+        }
 
 .glowny-kontener {
     display: flex;
@@ -54,22 +55,20 @@ body, html {
     padding: 2% 0
 }
 
-.glowny-kontener .logo {
-    height: 20vw;
-    background-color: #8b0000;
-    width: 60%
-}
+    .glowny-kontener .logo {
+        height: 20vw;
+        background-color: #8b0000;
+        width: 60%
+    }
 
-.glowny-kontener .grid-skrzynki {
-    margin-top: 2%;
-    height: 5vw;
-    width: 80%;
-    display: grid;
-    grid-template-columns:repeat(4, 1fr)
-}
+    .glowny-kontener .grid-skrzynki {
+        margin-top: 2%;
+        height: 5vw;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr)
+    }
 
-.glowny-kontener .grid-skrzynki .element-grid-skrzynki {
-    margin: 10%;
-    height: 24vw;
-    background-color: #fff
-}
+        .glowny-kontener .grid-skrzynki .element-grid-skrzynki {
+            margin:15px;
+            
+        }
