@@ -69,25 +69,33 @@ body, html {
     width: 100%;
 }
 
-.grid-skrzynki {
+.flex-skrzynki {
     margin: 2vw 2vw;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    gap: 2vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.element-grid-skrzynki {
+.element-flex-skrzynki {
     cursor: pointer;
+    margin: 0 calc(2vw - 4px) 2vw 0;
     border-radius: 10px;
     background-color: rgba(105, 105, 105, .1);
-    justify-self: center;
     object-fit: contain;
     width: 15vw;
     height: 15vw;
     transition-duration: .5s;
 }
 
-.element-grid-skrzynki:hover {
+.element-flex-skrzynki:last-child, .element-flex-skrzynki:nth-child(4n)  {
+    margin-right: 0;
+}
+
+.element-flex-skrzynki.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.element-flex-skrzynki:hover {
     transform: scale(1.05);
     background-color: rgba(105, 105, 105, .5);
 }
