@@ -1,5 +1,8 @@
 node_modules
 dist
+bin
+My Project
+obj
 package.json
 package-lock.json
 gulpfile.js
@@ -9,3 +12,6 @@ gulpfile.js
 *.patch
 *.idea
 *.vs
+*.sln
+*.vbproj
+*.user

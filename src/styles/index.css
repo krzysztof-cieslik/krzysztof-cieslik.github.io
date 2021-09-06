@@ -29,6 +29,11 @@ body, html {
     align-items: center;
 }
 
+.element-kontenera {
+    text-decoration: none;
+    color: #e7e7e7;
+}
+
 .lewy-kontener .element-kontenera {
     margin-left: 8%;
 }

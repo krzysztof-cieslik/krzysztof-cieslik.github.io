@@ -1,0 +1,16 @@
+﻿@import url("index.css");
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+.log-in-container {
+    display: flex;
+    height: 530px;
+    width: 480px;
+    /*background-color: rgba(105, 105, 105, .1);*/
+    background-color: white;
+}
