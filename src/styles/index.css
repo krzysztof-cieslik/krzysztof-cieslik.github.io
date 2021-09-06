@@ -59,7 +59,7 @@ body, html {
 
 .postac-lewo, .postac-prawo {
     width: 15%;
-    background-color: #340596;
+    background-image: url("../assets/postac-tt.png");
 }
 
 .postac-prawo {
