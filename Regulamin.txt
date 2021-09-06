@@ -41,7 +41,7 @@
 
 
 
-§5 Otwieranie skrzynek
+§4 Otwieranie skrzynek
 
 
     1. Serwis internetowy oferuje Użytkownikom możliwość zakupu otwarcia skrzynki z Przedmiotami, skrzynek dziennego bonusu, skrzynek z kodami zniżkowymi.
@@ -50,7 +50,7 @@
     4. Administrator nie gwarantuje, że wartość skrzynki będzie większa od ceny zakupu otwarcia skrzynki.
 
 
-§6 Prawo własności przemysłowej
+§5 Prawo własności przemysłowej
   1. Wszystkie oraz wszelkie prawa autorskie należa do Właścicieli strony internetowej pod adresem -x-x-, w skład wchodzą :
 	a) Zaprezętowane grafiki inaczej logotypy
 	b) Domena internetowa
