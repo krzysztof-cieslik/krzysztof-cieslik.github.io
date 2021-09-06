@@ -5,12 +5,12 @@
 }
 
 body, html {
-    height: 100%;
+    height: 200%;
     padding: 0;
     margin: 0;
     font-family: Roboto, serif;
     color: #e7e7e7;
-    background-image: url("../assets/tlo-nuke.png");
+    background: no-repeat center/cover url("../assets/tlo-nuke.png") fixed;
 }
 
 .menu {
@@ -19,7 +19,7 @@ body, html {
     position: sticky;
     top: 0;
     min-height: 50px;
-    height: 4%;
+    height: 100px;
     background-color: #373737;
 }
 
@@ -54,12 +54,20 @@ body, html {
 
 .glowny-kontener {
     display: flex;
-    padding-bottom: 2%;
 }
 
 .postac-lewo, .postac-prawo {
     width: 15%;
-    background-image: url("../assets/postac-tt.png");
+    overflow: visible;
+}
+
+.postac-lewo img {
+    position: sticky;
+    transform: rotatey(180deg);
+    width: 20vw;
+    object-fit: contain;
+    top: 13vw;
+    z-index: 1;
 }
 
 .postac-prawo {
@@ -67,6 +75,8 @@ body, html {
 }
 
 .kontener-skrzynek {
+    display: flex;
+    flex-direction: column;
     width: 70%;
 }
 
@@ -75,14 +85,16 @@ body, html {
 }
 
 .flex-skrzynki {
-    margin: 2vw 2vw;
+    padding: 2vw;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: #1a1a1a;
 }
 
 .element-flex-skrzynki {
     cursor: pointer;
+    z-index: 2;
     margin: 0 calc(2vw - 4px) 2vw 0;
     border-radius: 10px;
     background-color: rgba(105, 105, 105, .1);
@@ -103,4 +115,9 @@ body, html {
 .element-flex-skrzynki:hover {
     transform: scale(1.05);
     background-color: rgba(105, 105, 105, .5);
+}
+
+.footer {
+    height: 100px;
+    background-color: aliceblue;
 }
