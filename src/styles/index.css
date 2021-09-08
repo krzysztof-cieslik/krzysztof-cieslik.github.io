@@ -133,7 +133,36 @@ body, html {
     background-color: rgb(69, 69, 69);
 }
 
-.footer {
-    height: 100px;
-    background-color: aliceblue;
+.footer_container {
+    height: 20vh;
+    background-color: #1a1a1a;
+   
+
+    
 }
+
+.footer {
+    width: 134.5vh;
+    height: 20vh;
+    margin: auto;
+    background-color: #1a1a1a;
+    color: #e7e7e7;
+    border-top: solid;
+    border-color: #262626;
+    border-width: 3px;
+    color: #e7e7e7;
+    font-size: 2vh;
+    
+   
+}
+
+p {
+    display: inline;
+    line-height:2.4;
+    margin-left:18vh;
+}
+.footer_logo {
+   width:15vw;
+   margin-left:53vh;
+}
+
