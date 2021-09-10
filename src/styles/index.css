@@ -47,6 +47,7 @@ body, html {
     height: 100%;
     display: flex;
     align-items: center;
+    margin-right:3.5vh;
 }
 
 .prawy-kontener .element-kontenera:not(:first-child) {
@@ -144,8 +145,6 @@ body, html {
   
 }
 
-
-
 .footer_text {
     float:left;
     display: inline-block;
@@ -153,11 +152,48 @@ body, html {
     font-size: 2.4vh;
 }
 
-
-
 .footer_logo{
    float:right;
    margin:auto;
     width:20vw;
     
 }
+
+.middle_container {
+    margin: auto;
+    font-size:3vh;
+}
+
+ul, ul li {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	float: left;
+	background-color: #fff;
+	padding: 1px 0 1px 1px;
+	
+}
+
+ul li {
+	float: left;
+}
+
+    ul a:link, ul a:visited {
+        text-decoration: none;
+        display: block;
+        font-weight: bold;
+        background: #1a1a1a;
+        color: #fff;
+        padding: 10px 20px;
+        border-right: 1px solid #fff;
+        border-right: 1px solid #fff;
+    }
+
+    ul a:hover {
+        background-color: #262626;
+        
+    }
