@@ -1,0 +1,69 @@
+*{
+    margin: 0; 
+    padding: 0;
+    font-family:Baloo;
+    box-sizing: border-box;
+
+
+}
+body {
+    background-color: white;
+}
+
+#wrapper {
+    max-width:1800px;
+    margin: 0 auto 0 auto;
+    background-color: white;
+}
+header img {
+    width: 500px; 
+    display: block;
+    
+
+    
+}
+
+    
+    article{
+        margin-top: 20px
+        
+    }
+        article h1 {
+            font-size: 30px;
+            text-align: center;
+            margin: 0 15% 20px 15%;
+            padding-bottom: 15px;
+            border-bottom: 2px solid crimson;
+        }
+
+        .v2 {
+            width:auto;
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            min-height: 50px;
+            height: 100px;
+            background-color: #373737;
+            z-index: 3;
+            
+        }
+article p {
+    text-align:justify;
+    line-height: 25px;
+    font-size: 17px;
+    padding: 15px 0 15px 0;
+    
+
+
+}
+footer{
+    height:40px;
+    background-color:black;
+    color: white;
+    line-height:40px;
+    text-align: center;
+    margin-top:40px;
+  
+    
+}
