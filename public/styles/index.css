@@ -1,0 +1,93 @@
+﻿@import "common-attributes.css";
+
+body, html {
+    font-family: Roboto, serif;
+    color: #e7e7e7;
+    background: no-repeat center/cover url("../assets/backgrounds/bg_csgo.png") fixed;
+}
+
+.main-container {
+    display: flex;
+}
+
+.char-left, .char-right {
+    display: flex;
+    align-items: flex-end;
+    width: 15%;
+    overflow: visible;
+}
+
+.char-left img {
+    position: sticky;
+    transform: rotatey(180deg);
+    width: 20vw;
+    flex-shrink: 0;
+    object-fit: contain;
+    bottom: 0;
+    z-index: 1;
+}
+
+.char-right img {
+    position: sticky;
+    width: 22vw;
+    flex-shrink: 0;
+    object-fit: contain;
+    bottom: 0;
+    z-index: 1;
+    direction: rtl;
+}
+
+.char-right {
+    display: flex;
+    justify-content: flex-end;
+    order: 1;
+}
+
+.middle-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.logo{
+    width: 100%;
+}
+
+.case-container {
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #1a1a1a;
+}
+
+.case-container-element {
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 10px;
+    background-color: rgba(105, 105, 105, .1);
+    object-fit: contain;
+    width: 15vw;
+    height: 15vw;
+    transition-duration: .5s;
+}
+
+.case-container a {
+    margin: 0 calc(2vw - 4px) 2vw 0;
+    height: 15vw;
+    width: 15vw;
+    z-index: 2;
+}
+
+.case-container a:last-child, .case-container a:nth-child(4n)  {
+    margin-right: 0;
+}
+
+.case-container a.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.case-container-element:hover {
+    transform: scale(1.05);
+    background-color: rgb(69, 69, 69);
+}

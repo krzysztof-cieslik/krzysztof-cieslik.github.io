@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="styles/index.css" rel="stylesheet"/>
+    <title>SPSK CASE</title>
+</head>
+<body>
+<div class="menu">
+    <% if (user) { %>
+        <div class="left-menu-container">
+            <a href="/" class="menu-container-element page-name"><img src="assets/logos/logo_spsk.png" width="200" alt="SPSK CASE"></a>
+        </div>
+        <div class="middle-menu-container">
+            <ul class="menu_poziome">
+                <li><a href="minecraft">Minecraft</a></li>
+                <li><a href="minecraft">CS:GO</a></li>
+                <li><a href="minecraft">LoL</a></li>
+                <li><a href="minecraft">Fortnite</a></li>
+                <li><a href="minecraft">ROBLOX</a></li>
+                <li><a href="minecraft">Brawl Stars</a></li>
+                <li><a href="minecraft">Among us</a></li>
+            </ul>
+        </div>
+        <div class="right-menu-container">
+            <div class="menu-container-element"> Punkty: <%= user.points %></div>
+            <a href="logout" class="menu-container-element"> <%= user.username %> </a>
+            <a href="logout" class="menu-container-element"> wyloguj</a>
+        </div>
+    <% } else { %>
+        <div class="left-menu-container">
+            <a href="/" class="menu-container-element page-name"><img src="assets/logos/logo_spsk.png" width="200" alt="SPSK CASE"></a>
+        </div>
+        <div class="middle-menu-container">
+            <ul class="menu_poziome">
+                <li><a href="minecraft">Minecraft</a></li>
+                <li><a href="minecraft">CS:GO</a></li>
+                <li><a href="minecraft">LoL</a></li>
+                <li><a href="minecraft">Fortnite</a></li>
+                <li><a href="minecraft">ROBLOX</a></li>
+                <li><a href="minecraft">Brawl Stars</a></li>
+                <li><a href="minecraft">Among us</a></li>
+            </ul>
+        </div>
+        <div class="right-menu-container">
+            <a href="users/new" class="menu-container-element"><img src="assets/rejstracja.png" width="200" alt="Rejestracja"/></a>
+            <a href="login" class="menu-container-element"><img src="assets/logowanie.png" width="200" alt="Logowanie"/></a>
+        </div>
+    <% } %>
+</div>
+<% if (user) { %>
+    <div class="main-container">
+        <div class="char-left"><img src="assets/characters/char_csgo_1.png" alt="Postać 1"></div>
+        <div class="char-right"><img src="assets/characters/char_csgo_2.png" alt="Postać 2"></div>
+        <div class="middle-container">
+            <img src="assets/logos/banner.png" class="logo" alt="SPSK CASE">
+            <div class="case-container">
+                <a href="minecraft"><img src="assets/cases/minecraft_case.png" class="case-container-element" alt="Skrzynia Minecraft"></a>
+                <a href="minecraft"><img src="assets/cases/csgo_case.png" class="case-container-element" alt="Skrzynia Counter Strike: Global Offensive"></a>
+                <a href="minecraft"><img src="assets/cases/roblox_case.png" class="case-container-element" alt="Skrzynia Roblox"></a>
+                <a href="minecraft"><img src="assets/cases/fortnite_case.png" class="case-container-element" alt="Skrzynia Fortnite"></a>
+                <a href="minecraft" class="no-margin-bottom"><img src="assets/cases/brawlstars_case.png"
+                                                                  class="case-container-element" alt="Skrzynia Brawl Stars"></a>
+                <a href="minecraft" class="no-margin-bottom"><img src="assets/cases/amogus_case.png"
+                                                                  class="case-container-element" alt="Skrzynia Among Us"></a>
+                <a href="minecraft" class="no-margin-bottom"><img src="assets/cases/minecraft_case.png"
+                                                                  class="case-container-element" alt="Skrzynia League of Legends"></a>
+            </div>
+        </div>
+    </div>
+<% } else { %>
+    <div class="main-container">
+        <div class="char-left"><img src="assets/characters/char_csgo_1.png" alt="Postać 1"></div>
+        <div class="char-right"><img src="assets/characters/char_csgo_2.png" alt="Postać 2"></div>
+        <div class="middle-container">
+            <img src="assets/logos/banner.png" class="logo" alt="SPSK CASE">
+            <div class="case-container">
+                <a href="minecraft"><img src="assets/cases/minecraft_case.png" class="case-container-element" alt="Skrzynia Minecraft"></a>
+                <a href="minecraft"><img src="assets/cases/csgo_case.png" class="case-container-element" alt="Skrzynia Counter Strike: Global Offensive"></a>
+                <a href="minecraft"><img src="assets/cases/roblox_case.png" class="case-container-element" alt="Skrzynia Roblox"></a>
+                <a href="minecraft"><img src="assets/cases/fortnite_case.png" class="case-container-element" alt="Skrzynia Fortnite"></a>
+                <a href="minecraft" class="no-margin-bottom"><img src="assets/cases/brawlstars_case.png"
+                                                                  class="case-container-element" alt="Skrzynia Brawl Stars"></a>
+                <a href="minecraft" class="no-margin-bottom"><img src="assets/cases/amogus_case.png"
+                                                                  class="case-container-element" alt="Skrzynia Among Us"></a>
+                <a href="minecraft" class="no-margin-bottom"><img src="assets/cases/minecraft_case.png"
+                                                                  class="case-container-element" alt="Skrzynia League of Legends"></a>
+            </div>
+        </div>
+    </div>
+<% } %>
+<div class="footer_container">
+    <div class="footer_text">
+        <p>Kontakt Tel. 211513379</p>
+        <p>E-mail: SPSK@gmail.com</p>
+        <a href="terms">Regulamin</a>
+    </div>
+    <div><img class="footer_logo" src="assets/logos/logo_giganci.png" alt="Starcie Gigantów"/></div>
+</div>
+</body>
+</html>
+
+    

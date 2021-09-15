@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link href="../styles/log-in.css" rel="stylesheet"/>
+    <title></title>
+</head>
+<body>
+<div class="menu">
+    <div class="left-menu-container">
+        <a href="/" class="menu-container-element page-name"><img src="assets/logos/logo_spsk.png" width="200" alt="SPSK CASE"></a>
+    </div>
+    <div class="middle-menu-container">
+        <ul class="menu_poziome">
+            <li><a href="minecraft">Minecraft</a></li>
+            <li><a href="minecraft">CS:GO</a></li>
+            <li><a href="minecraft">LoL</a></li>
+            <li><a href="minecraft">Fortnite</a></li>
+            <li><a href="minecraft">ROBLOX</a></li>
+            <li><a href="minecraft">Brawl Stars</a></li>
+            <li><a href="minecraft">Among us</a></li>
+        </ul>
+    </div>
+    <div class="right-menu-container">
+        <a href="users/new" class="menu-container-element"><img src="assets/rejstracja.png" width="200" alt="Rejestracja"/></a>
+        <a href="login" class="menu-container-element"><img src="assets/logowanie.png" width="200" alt="Logowanie"/></a>
+    </div>
+</div>
+<div class="main-container">
+    <div class="log-in-container">
+        <% if (hasMessages) { %>
+            <ul>
+                <% messages.forEach(function(message){ %>
+                    <li><%= message %></li>
+                <% }); %>
+            </ul>
+        <% } %>
+        <form action="/login/password" method="post">
+            <input type="text" name="username" placeholder="Username">
+            <input type="password" name="password" placeholder="Password">
+            <button type="submit" class="contrast">Sign in</button>
+        </form>
+    </div>
+</div>
+<div class="footer_container">
+    <div class="footer_text">
+        <p>Kontakt Tel. 211513379</p>
+        <p>E-mail: SPSK@gmail.com</p>
+        <a href="terms">Regulamin</a>
+    </div>
+    <div><img class="footer_logo" src="assets/logos/logo_giganci.png" alt="Starcie Gigantów"/></div>
+</div>
+</body>
+</html>

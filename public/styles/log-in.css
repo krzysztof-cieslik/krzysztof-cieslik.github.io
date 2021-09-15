@@ -1,4 +1,10 @@
-﻿@import url("index.css");
+﻿@import "common-attributes.css";
+
+body, html {
+    font-family: Roboto, serif;
+    color: #e7e7e7;
+    background: no-repeat center/cover url("../assets/backgrounds/bg_csgo.png") fixed;
+}
 
 .main-container {
     display: flex;

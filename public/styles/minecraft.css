@@ -1,0 +1,20 @@
+@import "common-attributes.css";
+
+body, html {
+    font-family: Roboto, serif;
+    color: #e7e7e7;
+    background: no-repeat center/cover url("../assets/backgrounds/bg_csgo.png") fixed;
+}
+
+.main-container {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.points-input {
+    height: 40px;
+    width: 356px;
+    font-size: 1.5rem;
+}
