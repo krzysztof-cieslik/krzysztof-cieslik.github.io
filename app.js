@@ -46,4 +46,6 @@ app.use('/users', usersRouter);
 app.use('/terms', termsRouter);
 app.use('/minecraft', minecraftRouter);
 
+console.log("http://localhost:3000\n");
+
 module.exports = app;
