@@ -8,7 +8,6 @@ module.exports = function() {
       username TEXT UNIQUE, \
       hashed_password BLOB, \
       salt BLOB, \
-      name TEXT, \
       points INT \
     )");
   });

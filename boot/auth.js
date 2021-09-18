@@ -15,18 +15,17 @@ module.exports = function() {
   passport.use(new Strategy(function(username, password, cb) {
     db.get('SELECT rowid AS id, * FROM users WHERE username = ?', [ username ], function(err, row) {
       if (err) { return cb(err); }
-      if (!row) { return cb(null, false, { message: 'Incorrect username or password.' }); }
+      if (!row) { return cb(null, false, { message: 'Niepoprawny login lub hasło' }); }
 
       crypto.pbkdf2(password, row.salt, 10000, 32, 'sha256', function(err, hashedPassword) {
         if (err) { return cb(err); }
         if (!crypto.timingSafeEqual(row.hashed_password, hashedPassword)) {
-          return cb(null, false, { message: 'Incorrect username or password.' });
+          return cb(null, false, { message: 'Niepoprawny login lub hasło' });
         }
 
         var user = {
           id: row.id.toString(),
           username: row.username,
-          displayName: row.name,
           points: row.points.toString()
         };
         return cb(null, user);
@@ -44,7 +43,7 @@ module.exports = function() {
   // deserializing.
   passport.serializeUser(function(user, cb) {
     process.nextTick(function() {
-      cb(null, { id: user.id, username: user.username, points: user.points, name: user.displayName });
+      cb(null, { id: user.id, username: user.username, points: user.points});
     });
   });
 

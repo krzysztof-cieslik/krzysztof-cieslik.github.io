@@ -13,11 +13,10 @@ router.post('/', function(req, res, next) {
   crypto.pbkdf2(req.body.password, salt, 10000, 32, 'sha256', function(err, hashedPassword) {
     if (err) { return next(err); }
     
-    db.run('INSERT INTO users (username, hashed_password, salt, name, points) VALUES (?, ?, ?, ?, ?)', [
+    db.run('INSERT INTO users (username, hashed_password, salt, points) VALUES (?, ?, ?, ?)', [
       req.body.username,
       hashedPassword,
       salt,
-      req.body.name,
       req.body.points = 0
     ], function(err) {
       if (err) { return next(err); }
@@ -25,7 +24,6 @@ router.post('/', function(req, res, next) {
       var user = {
         id: this.lastID.toString(),
         username: req.body.username,
-        displayName: req.body.name,
         points: req.body.points.toString()
       };
       req.login(user, function(err) {

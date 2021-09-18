@@ -11,7 +11,8 @@ router.get('/login', function(req, res, next) {
 router.post('/login/password', passport.authenticate('local', {
   successRedirect: '/',
   failureRedirect: '/login',
-  failureMessage: true
+  failureMessage: true,
+  badRequestMessage: 'Brakujące dane uwierzytelniające '
 }));
 
 router.get('/logout', function(req, res, next) {
