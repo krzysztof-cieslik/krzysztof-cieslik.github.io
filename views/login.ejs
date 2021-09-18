@@ -28,20 +28,32 @@
 </div>
 <div class="main-container">
     <div class="log-in-container">
-        <% if (hasMessages) { %>
+
+
+
+      
+        <div class="form-box">
+            <h1 class="form-box__title">Zaloguj się</h1>
+
+            <% if (hasMessages) { %>
             <ul>
                 <% messages.forEach(function(message){ %>
-                    <li><%= message %></li>
+                <li><%= message %></li>
                 <% }); %>
             </ul>
-        <% } %>
-        <form action="/login/password" method="post">
-            <input type="text" name="username" placeholder="Username">
-            <input type="password" name="password" placeholder="Password">
-            <button type="submit" class="contrast">Sign in</button>
-        </form>
+            <% } %>
+            <form action="/login/password" method="post">
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+                <button class="button" type="submit">Stwórz konto</button>
+                <a class="button" href="users/new">Sime</a>
+            </form>
+            
+        </div>
+
     </div>
-</div>
+    </div>
+
 <div class="footer_container">
     <div class="footer_text">
         <p>Kontakt Tel. 211513379</p>
