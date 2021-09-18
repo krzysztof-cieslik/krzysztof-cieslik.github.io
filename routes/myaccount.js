@@ -8,7 +8,7 @@ var router = express.Router();
 router.get('/',
   ensureLoggedIn(),
   function(req, res, next) {
-    db.get('SELECT rowid AS id, username, name, points FROM users WHERE rowid = ?', [ req.user.id ], function(err, row) {
+    db.get('SELECT rowid AS id, username, points FROM users WHERE rowid = ?', [ req.user.id ], function(err, row) {
       if (err) { return next(err); }
 
       // TODO: Handle undefined row.
@@ -16,7 +16,6 @@ router.get('/',
       var user = {
         id: row.id.toString(),
         username: row.username,
-        displayName: row.name,
         points: row.points.toString()
       };
       res.render('profile', { user: user });

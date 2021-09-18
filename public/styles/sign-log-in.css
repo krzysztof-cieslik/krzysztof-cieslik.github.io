@@ -1,0 +1,112 @@
+﻿@import "common-attributes.css";
+
+body, html {
+    font-family: Roboto, serif;
+    color: #e7e7e7;
+    background: no-repeat center/cover url("../assets/backgrounds/bg_csgo.png") fixed;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+
+}
+
+.log-in-container {
+    display: flex;
+    height: 100%;
+    width: 480px;
+    background-color: #171717;
+    font-family: 'Fira Code', sans-serif;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 459px;
+    height: 493px;
+    padding: 20px 55px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form-container input {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid hsla(0, 0%, 100%, .5);
+    width: 90%;
+    height: 40px;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.form-container h1 {
+    margin-bottom: 0;
+}
+
+.form-container ul {
+    color: #ff6666;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    border-top: 3px double hsla(0, 0%, 100%, 0.5);
+    color: white;
+    text-align: center;
+    height: 0;
+    margin: 20px 0;
+}
+
+hr::after {
+    background: #171717;
+    content: "lub";
+    padding: 0 4px;
+    position: relative;
+    top: -10px;
+    color: white;
+}
+
+
+.button {
+    color: black;
+    display: block;
+    background-color: white;
+    border: none;
+    font-size: 14px;
+    padding: 10px 19px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    width: 145px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #e6e6e6
+}
+
+.button:active {
+    background-color: #a6a6a6
+}
+
+.margin-top-50px {
+    margin-top: 50px;
+}
