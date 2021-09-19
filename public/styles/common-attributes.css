@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
-
 * {
     box-sizing: border-box;
 }
@@ -19,84 +17,75 @@ body, html {
 
 .menu {
     display: flex;
-    justify-content: space-between;
     flex-shrink: 0;
     position: sticky;
     top: 0;
-    min-height: 50px;
-    height: 100px;
     background-color: #1a1a1a;
     z-index: 3;
-    white-space: nowrap;
     font-family: Roboto, serif;
     border-bottom: solid #262626 3px;
+    width: 100%;
 }
 
 .left-menu-container {
-    height: 100%;
+    padding-left: 30px;
+    width: 10%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+}
+
+.left-menu-container img {
+    width: 100%;
 }
 
 .middle-menu-container {
-    margin: auto;
-    font-size: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    padding: 30px;
 }
 
-.middle-menu-container ul, .middle-menu-container li {
-    display: block;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.middle-menu-container .menu-container-element-wrapper {
+    border-left: 1px solid #fff;
+    font-size: 0;
 }
 
-.middle-menu-container ul {
-    float: left;
-    padding: 1px 0 1px 1px;
+.middle-menu-container .menu-container-element {
+    text-align: center;
+    width: 8vw;
+    min-width: 150px;
+    font-size: 1vw;
 }
 
-.middle-menu-container ul li {
-    float: left;
-}
-
-.middle-menu-container ul a:link, .middle-menu-container ul a:visited {
-    text-decoration: none;
-    display: block;
-    font-weight: bold;
-    background: #1a1a1a;
-    color: #fff;
+.middle-menu-container a{
     padding: 10px 20px;
     border-right: 1px solid #fff;
-    border-right: 1px solid #fff;
 }
 
-.middle-menu-container ul a:hover {
+.middle-menu-container a:hover {
     background-color: #262626;
-
 }
 
 .right-menu-container {
-    height: 100%;
+    width: 20%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-}
-
-.menu-container-element {
-    text-decoration: none;
-    color: #e7e7e7;
-}
-
-.left-menu-container .menu-container-element {
-    margin-left: .5vw;
-}
-
-.page-name {
-    font-weight: 700;
+    justify-content: space-around;
+    font-family: '8BITWONDERNominal', serif;
+    font-size: .7vw;
 }
 
 .right-menu-container .menu-container-element {
-    margin-right: .5vw;
+    margin: 15px;
+}
+
+.menu-container-element {
+    display: inline-block;
+    text-decoration: none;
+    color: #e7e7e7;
+    white-space: nowrap;
 }
 
 .footer_container {
