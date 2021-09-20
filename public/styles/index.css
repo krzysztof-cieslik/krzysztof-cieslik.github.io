@@ -38,7 +38,6 @@ body, html {
 }
 
 .char-right {
-    display: flex;
     justify-content: flex-end;
     order: 1;
 }
@@ -46,10 +45,9 @@ body, html {
 .middle-container {
     display: flex;
     flex-direction: column;
-    width: 70%;
 }
 
-.logo{
+.logo {
     width: 100%;
 }
 
@@ -79,7 +77,7 @@ body, html {
     z-index: 2;
 }
 
-.case-container a:last-child, .case-container a:nth-child(4n)  {
+.case-container a:last-child, .case-container a:nth-child(4n) {
     margin-right: 0;
 }
 
@@ -90,4 +88,21 @@ body, html {
 .case-container-element:hover {
     transform: scale(1.05);
     background-color: rgb(69, 69, 69);
+}
+
+@media all and (max-width: 1080px) {
+    .char-left {
+        display: none;
+    }
+
+    .char-right {
+        display: none;
+    }
+
+    #fortnite {
+        margin-right: 2vw;
+    }
+    #brawlstars {
+        margin: 0 0 2vw 0;
+    }
 }
