@@ -29,32 +29,30 @@
             </div>
         </div>
         <div class="right-menu-container">
-            <div class="menu-container-element"> Punkty: <%= user.points %></div>
+            <div class="menu-container-element"><img src="assets/points_coin.png"/><%= user.points %></div>
             <a href="logout" class="menu-container-element"> <%= user.username %> </a>
             <a href="logout" class="menu-container-element">Wyloguj</a>
         </div>
     <% } else { %>
-            <div class="left-menu-container">
-                <a href="/" class="menu-container-element"><img src="assets/logos/logo_spsk.png"
-                                                                alt="SPSK CASE"></a>
+        <div class="left-menu-container">
+            <a href="/" class="menu-container-element"><img src="assets/logos/logo_spsk.png"
+                                                            alt="SPSK CASE"></a>
+        </div>
+        <div class="middle-menu-container">
+            <div class="menu-container-element-wrapper">
+                <a class="menu-container-element" href="minecraft">Minecraft</a>
+                <a class="menu-container-element" href="minecraft">CS:GO</a>
+                <a class="menu-container-element" href="minecraft">LoL</a>
+                <a class="menu-container-element" href="minecraft">Fortnite</a>
+                <a class="menu-container-element" href="minecraft">ROBLOX</a>
+                <a class="menu-container-element" href="minecraft">Brawl Stars</a>
+                <a class="menu-container-element" href="minecraft">Among us</a>
             </div>
-            <div class="middle-menu-container">
-                <div class="menu-container-element-wrapper">
-                    <a class="menu-container-element" href="minecraft">Minecraft</a>
-                    <a class="menu-container-element" href="minecraft">CS:GO</a>
-                    <a class="menu-container-element" href="minecraft">LoL</a>
-                    <a class="menu-container-element" href="minecraft">Fortnite</a>
-                    <a class="menu-container-element" href="minecraft">ROBLOX</a>
-                    <a class="menu-container-element" href="minecraft">Brawl Stars</a>
-                    <a class="menu-container-element" href="minecraft">Among us</a>
-                </div>
-            </div>
-            <div class="right-menu-container">
-                <div class="menu-container-element-wrapper">
-                    <a href="users/new" class="menu-container-element">Rejestracja</a>
-                    <a href="login" class="menu-container-element">Logowanie</a>
-                </div>
-            </div>
+        </div>
+        <div class="right-menu-container">
+            <a href="users/new" class="menu-container-element">Rejestracja</a>
+            <a href="login" class="menu-container-element">Logowanie</a>
+        </div>
     <% } %>
 </div>
 <header>

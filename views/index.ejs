@@ -14,7 +14,7 @@
 <div class="menu">
     <% if (user) { %>
         <div class="left-menu-container">
-            <a href="/" class="menu-container-element"><img src="assets/logos/logo_spsk.png"alt="SPSK CASE"></a>
+            <a href="/" class="menu-container-element"><img src="assets/logos/logo_spsk.png" alt="SPSK CASE"></a>
         </div>
         <div class="middle-menu-container">
             <div class="menu-container-element-wrapper">
@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="right-menu-container">
-            <div class="menu-container-element"><img src="assets\points_coin.png " width="60" /><%= user.points %></div>
+            <div class="menu-container-element"><img src="assets/points_coin.png"/><%= user.points %></div>
             <a href="logout" class="menu-container-element"> <%= user.username %> </a>
             <a href="logout" class="menu-container-element">Wyloguj</a>
         </div>
@@ -49,10 +49,8 @@
             </div>
         </div>
         <div class="right-menu-container">
-            <div class="menu-container-element-wrapper">
-                <a href="users/new" class="menu-container-element">Rejestracja</a>
-                <a href="login" class="menu-container-element">Logowanie</a>
-            </div>
+            <a href="users/new" class="menu-container-element">Rejestracja</a>
+            <a href="login" class="menu-container-element">Logowanie</a>
         </div>
     <% } %>
 </div>
