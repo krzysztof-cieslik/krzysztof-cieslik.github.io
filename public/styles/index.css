@@ -6,43 +6,43 @@ body {
     background: no-repeat center/cover url("../assets/backgrounds/bg_csgo.png") fixed;
 }
 
-
 .main-container {
     display: flex;
 }
 
-.char-left, .char-right {
+.char-left-container, .char-right-container {
     display: flex;
     align-items: flex-end;
     width: 15%;
     overflow: visible;
 }
 
-.char-left img {
+.char-left-container div, .char-right-container div {
     position: sticky;
-    transform: rotatey(180deg);
-    width: 20vw;
     flex-shrink: 0;
-    object-fit: contain;
+    width: 17vw;
+    height: 80%;
     bottom: 0;
     z-index: 1;
-    
+    object-fit: contain;
 }
 
-.char-right img {
-    position: sticky;
-    width: 22vw;
-    flex-shrink: 0;
-    object-fit: contain;
-    bottom: 0;
-    z-index: 1;
-    direction: rtl;
-    
+.char-left-container div {
+    transform: rotatey(180deg);
+
+}
+
+.char-right-container {
+    justify-content: flex-end;
+    order: 1;
+}
+
+.char-left {
+    background: no-repeat bottom/108% url("../assets/characters/char_csgo_1.png");
 }
 
 .char-right {
-    justify-content: flex-end;
-    order: 1;
+    background: no-repeat bottom/130% url("../assets/characters/char_csgo_2.png");
 }
 
 .middle-container {
@@ -94,11 +94,11 @@ body {
 }
 
 @media all and (max-width: 1080px) {
-    .char-left {
+    .char-left-container {
         display: none;
     }
 
-    .char-right {
+    .char-right-container {
         display: none;
     }
 

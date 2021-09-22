@@ -14,7 +14,6 @@
     <link rel="preload" as="image" href="assets/cases/case_fortnite.png">
     <link rel="preload" as="image" href="assets/cases/case_brawlstars.png">
     <link rel="preload" as="image" href="assets/cases/case_amogus.png">
-
     <title>SPSK CASE</title>
 </head>
 
@@ -66,8 +65,8 @@
 </div>
 <% if (user) { %>
     <div class="main-container">
-        <div id="character_left" class="char-left"><img src="assets/characters/char_csgo_1.png" alt="Postać 1"></div>
-        <div id="character_right" class="char-right"><img src="assets/characters/char_csgo_2.png" alt="Postać 2"></div>
+        <div id="character_left" class="char-left-container"><div class="char-left"></div></div>
+        <div id="character_right" class="char-right-container"><div class="char-right"></div></div>
         <div class="middle-container">
             <img src="assets/logos/banner.png" class="logo" alt="SPSK CASE">
             <div class="case-container">
@@ -94,8 +93,8 @@
     </div>
 <% } else { %>
     <div class="main-container">
-        <div class="char-left"><img src="assets/characters/char_csgo_1.png" alt="Postać 1"></div>
-        <div class="char-right"><img src="assets/characters/char_csgo_2.png" alt="Postać 2"></div>
+        <div id="character_left" class="char-left-container"><div class="char-left"></div></div>
+        <div id="character_right" class="char-right-container"><div class="char-right"></div></div>
         <div class="middle-container">
             <img src="assets/logos/banner.png" class="logo" alt="SPSK CASE">
             <div class="case-container">
