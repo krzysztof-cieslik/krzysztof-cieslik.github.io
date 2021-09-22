@@ -1,10 +1,12 @@
 ﻿@import "common-attributes.css";
 
-body, html {
+body {
     font-family: Roboto, serif;
     color: #e7e7e7;
-    background: no-repeat center/cover url("../assets/backgrounds/bg_csgo.png") fixed;
+    background-image:url("../assets/backgrounds/bg_csgo.png");
+    background-size:cover;
 }
+
 
 .main-container {
     display: flex;
@@ -25,6 +27,7 @@ body, html {
     object-fit: contain;
     bottom: 0;
     z-index: 1;
+    
 }
 
 .char-right img {
@@ -35,6 +38,7 @@ body, html {
     bottom: 0;
     z-index: 1;
     direction: rtl;
+    
 }
 
 .char-right {

@@ -2,17 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link href="styles/index.css" rel="stylesheet"/>
+    <link href="styles/index.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fontlibrary.org">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
-    <link rel="stylesheet" href="https://fontlibrary.org//face/8bit-wonder"/>
+    <link rel="stylesheet" href="https://fontlibrary.org//face/8bit-wonder" />
+    <link rel="preload" as="image" href="assets/cases/case_minecraft.png">
+    <link rel="preload" as="image" href="assets/cases/case_csgo.png">
+    <link rel="preload" as="image" href="assets/cases/case_roblox.png">
+    <link rel="preload" as="image" href="assets/cases/case_fortnite.png">
+    <link rel="preload" as="image" href="assets/cases/case_brawlstars.png">
+    <link rel="preload" as="image" href="assets/cases/case_amogus.png">
+   
     <title>SPSK CASE</title>
 </head>
+
 <body>
-<div class="menu">
-    <% if (user) { %>
+    <div class="menu">
+        <% if (user) { %>
         <div class="left-menu-container">
             <a href="/" class="menu-container-element"><img src="assets/logos/logo_spsk.png" alt="SPSK CASE"></a>
         </div>
@@ -28,14 +36,16 @@
             </div>
         </div>
         <div class="right-menu-container">
-            <div class="menu-container-element"><img src="assets/points_coin.png"/><%= user.points %></div>
+            <div class="menu-container-element"><img src="assets/points_coin.png" /><%= user.points %></div>
             <a href="logout" class="menu-container-element"> <%= user.username %> </a>
             <a href="logout" class="menu-container-element">Wyloguj</a>
         </div>
-    <% } else { %>
+        <% } else { %>
         <div class="left-menu-container">
-            <a href="/" class="menu-container-element"><img src="assets/logos/logo_spsk.png"
-                                                            alt="SPSK CASE"></a>
+            <a href="/" class="menu-container-element">
+                <img src="assets/logos/logo_spsk.png"
+                     alt="SPSK CASE">
+            </a>
         </div>
         <div class="middle-menu-container">
             <div class="menu-container-element-wrapper">
@@ -52,72 +62,77 @@
             <a href="users/new" class="menu-container-element">Rejestracja</a>
             <a href="login" class="menu-container-element">Logowanie</a>
         </div>
+        <% } %>
+    </div>
+    <% if (user) { %>
+    <div class="main-container">
+        <div id="character_left" class="char-left"><img src="assets/characters/char_csgo_1.png" alt="Postać 1"></div>
+        <div id="character_right" class="char-right"><img src="assets/characters/char_csgo_2.png" alt="Postać 2"></div>
+        <div class="middle-container">
+            <img src="assets/logos/banner.png" class="logo" alt="SPSK CASE">
+            <div class="case-container">
+                <a id="minecraft_case" href="minecraft"><img src="assets/cases/case_minecraft.png" class="case-container-element" alt="Skrzynia Minecraft"></a>
+                <a id="csgo_case" href="minecraft"><img src="assets/cases/case_csgo.png" class="case-container-element" alt="Skrzynia Counter Strike: Global Offensive"></a>
+                <a id="roblox_case" href="minecraft"><img src="assets/cases/case_roblox.png" class="case-container-element" alt="Skrzynia Roblox"></a>
+                <a id="fortnite_case" href="minecraft"><img src="assets/cases/case_fortnite.png" class="case-container-element" alt="Skrzynia Fortnite"></a>
+                <a id="brawlstars_case" href="minecraft" class="no-margin-bottom"><img src="assets/cases/case_brawlstars.png" class="case-container-element" alt="Skrzynia Brawl Stars"></a>
+                <a id="amogus_case" href="minecraft" class="no-margin-bottom"><img src="assets/cases/case_amogus.png" class="case-container-element" alt="Skrzynia Among Us"></a>
+                <a id="minecraft_case" href="minecraft" class="no-margin-bottom"><img src="assets/cases/case lol.png" class="case-container-element" alt="Skrzynia League of Legends"></a>
+            </div>
+        </div>
+    </div>
+    <% } else { %>
+    <div class="main-container">
+        <div class="char-left"><img src="assets/characters/char_csgo_1.png" alt="Postać 1"></div>
+        <div class="char-right"><img src="assets/characters/char_csgo_2.png" alt="Postać 2"></div>
+        <div class="middle-container">
+            <img src="assets/logos/banner.png" class="logo" alt="SPSK CASE">
+            <div class="case-container">
+                <a href="minecraft">
+                    <img src="assets/cases/case_minecraft.png" class="case-container-element"
+                         alt="Skrzynia Minecraft">
+                </a>
+                <a href="minecraft">
+                    <img src="assets/cases/case_csgo.png" class="case-container-element"
+                         alt="Skrzynia Counter Strike: Global Offensive">
+                </a>
+                <a href="minecraft">
+                    <img src="assets/cases/case_roblox.png" class="case-container-element"
+                         alt="Skrzynia Roblox">
+                </a>
+                <a href="minecraft" id="fortnite">
+                    <img src="assets/cases/case_fortnite.png"
+                         class="case-container-element"
+                         alt="Skrzynia Fortnite">
+                </a>
+                <a href="minecraft" id="brawlstars" class="no-margin-bottom">
+                    <img src="assets/cases/case_brawlstars.png"
+                         class="case-container-element"
+                         alt="Skrzynia Brawl Stars">
+                </a>
+                <a href="minecraft" class="no-margin-bottom">
+                    <img src="assets/cases/case_amogus.png"
+                         class="case-container-element"
+                         alt="Skrzynia Among Us">
+                </a>
+                <a href="minecraft" class="no-margin-bottom">
+                    <img src="assets/cases/case_minecraft.png"
+                         class="case-container-element"
+                         alt="Skrzynia League of Legends">
+                </a>
+            </div>
+        </div>
+    </div>
     <% } %>
-</div>
-<% if (user) { %>
-    <div class="main-container">
-        <div class="char-left"><img src="assets/characters/char_csgo_1.png" alt="Postać 1"></div>
-        <div class="char-right"><img src="assets/characters/char_csgo_2.png" alt="Postać 2"></div>
-        <div class="middle-container">
-            <img src="assets/logos/banner.png" class="logo" alt="SPSK CASE">
-            <div class="case-container">
-                <a href="minecraft"><img src="assets/cases/case_minecraft.png" class="case-container-element"
-                                         alt="Skrzynia Minecraft"></a>
-                <a href="minecraft"><img src="assets/cases/case_csgo.png" class="case-container-element"
-                                         alt="Skrzynia Counter Strike: Global Offensive"></a>
-                <a href="minecraft"><img src="assets/cases/case_roblox.png" class="case-container-element"
-                                         alt="Skrzynia Roblox"></a>
-                <a href="minecraft"><img src="assets/cases/case_fortnite.png" class="case-container-element"
-                                         alt="Skrzynia Fortnite"></a>
-                <a href="minecraft" class="no-margin-bottom"><img src="assets/cases/case_brawlstars.png"
-                                                                  class="case-container-element"
-                                                                  alt="Skrzynia Brawl Stars"></a>
-                <a href="minecraft" class="no-margin-bottom"><img src="assets/cases/case_amogus.png"
-                                                                  class="case-container-element"
-                                                                  alt="Skrzynia Among Us"></a>
-                <a href="minecraft" class="no-margin-bottom"><img src="assets/cases/case lol.png"
-                                                                  class="case-container-element"
-                                                                  alt="Skrzynia League of Legends"></a>
-            </div>
+    <div class="footer_container">
+        <div class="footer_text">
+            <p>Kontakt Tel. 211513379</p>
+            <p>E-mail: SPSK@gmail.com</p>
+            <a href="terms">Regulamin</a>
         </div>
+        <div><img class="footer_logo" src="assets/logos/logo_giganci.png" alt="Starcie Gigantów" /></div>
     </div>
-<% } else { %>
-    <div class="main-container">
-        <div class="char-left"><img src="assets/characters/char_csgo_1.png" alt="Postać 1"></div>
-        <div class="char-right"><img src="assets/characters/char_csgo_2.png" alt="Postać 2"></div>
-        <div class="middle-container">
-            <img src="assets/logos/banner.png" class="logo" alt="SPSK CASE">
-            <div class="case-container">
-                <a href="minecraft"><img src="assets/cases/case_minecraft.png" class="case-container-element"
-                                         alt="Skrzynia Minecraft"></a>
-                <a href="minecraft"><img src="assets/cases/case_csgo.png" class="case-container-element"
-                                         alt="Skrzynia Counter Strike: Global Offensive"></a>
-                <a href="minecraft"><img src="assets/cases/case_roblox.png" class="case-container-element"
-                                         alt="Skrzynia Roblox"></a>
-                <a href="minecraft" id="fortnite"><img src="assets/cases/case_fortnite.png"
-                                                       class="case-container-element"
-                                                       alt="Skrzynia Fortnite"></a>
-                <a href="minecraft" id="brawlstars" class="no-margin-bottom"><img src="assets/cases/case_brawlstars.png"
-                                                                  class="case-container-element"
-                                                                  alt="Skrzynia Brawl Stars"></a>
-                <a href="minecraft" class="no-margin-bottom"><img src="assets/cases/case_amogus.png"
-                                                                  class="case-container-element"
-                                                                  alt="Skrzynia Among Us"></a>
-                <a href="minecraft" class="no-margin-bottom"><img src="assets/cases/case_minecraft.png"
-                                                                  class="case-container-element"
-                                                                  alt="Skrzynia League of Legends"></a>
-            </div>
-        </div>
-    </div>
-<% } %>
-<div class="footer_container">
-    <div class="footer_text">
-        <p>Kontakt Tel. 211513379</p>
-        <p>E-mail: SPSK@gmail.com</p>
-        <a href="terms">Regulamin</a>
-    </div>
-    <div><img class="footer_logo" src="assets/logos/logo_giganci.png" alt="Starcie Gigantów"/></div>
-</div>
+    <script src="js/index.js"></script>
 </body>
 </html>
 
