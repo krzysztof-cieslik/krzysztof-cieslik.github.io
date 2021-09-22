@@ -3,8 +3,7 @@
 body {
     font-family: Roboto, serif;
     color: #e7e7e7;
-    background-image:url("../assets/backgrounds/bg_csgo.png");
-    background-size:cover;
+    background: no-repeat center/cover #1a1a1a fixed;
 }
 
 
