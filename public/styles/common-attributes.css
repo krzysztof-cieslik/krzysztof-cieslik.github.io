@@ -30,6 +30,7 @@ body, html {
 .left-menu-container {
     padding-left: 2vw;
     width: 10%;
+    min-width: 53px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -43,7 +44,7 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 80%;
+    width: 70%;
     font-family: '8BITWONDERNominal', serif;
     padding: 2vw;
 }
@@ -85,6 +86,10 @@ body, html {
     min-width: 24px;
 }
 
+.right-menu-container .menu-container-element {
+    margin: 0 10px;
+}
+
 .menu-container-element {
     display: inline-flex;
     justify-content: center;
@@ -116,4 +121,13 @@ body, html {
     float: right;
     margin: auto;
     width: 20vw;
+}
+
+@media all and (max-width: 540px) {
+    .middle-menu-container {
+        width: 192px;
+    }
+    .right-menu-container {
+        width: 100%;
+    }
 }
