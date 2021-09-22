@@ -12,12 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 duration: 500, fill: "forwards"
             })
         })
-        element.addEventListener("mouseleave", () => {
-
-            body.animate({backgroundImage: `none`, backgroundColor: '#1a1a1a'}, {
-                duration: 500, fill: "forwards", delay: 1000
-            })
-        })
+       
     })
 
 });

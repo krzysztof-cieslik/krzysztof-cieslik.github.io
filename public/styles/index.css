@@ -3,7 +3,7 @@
 body {
     font-family: Roboto, serif;
     color: #e7e7e7;
-    background: no-repeat center/cover #1a1a1a fixed;
+    background: no-repeat center/cover url("../assets/backgrounds/bg_csgo.png") fixed;
 }
 
 
